@@ -1,4 +1,4 @@
-export interface Track {
+export interface ITrack {
   country: string;
   name: string;
   imageUrl: string;
@@ -6,7 +6,7 @@ export interface Track {
 }
 
 
-export const tracks: Track[] = [
+export const tracks: ITrack[] = [
   {
     country: "Bahrain",
     name: "Bahrain International Circuit",
@@ -165,7 +165,7 @@ export const tracks: Track[] = [
   }
 ]
 
-export function getRandomTrack(): Track {
+export function getRandomTrack(): ITrack {
   const randomIndex = Math.floor(Math.random() * tracks.length);
 
   return tracks[randomIndex];
