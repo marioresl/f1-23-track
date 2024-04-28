@@ -10,7 +10,7 @@ export function App() {
   }
 
   return (<>
-      <div className="h-screen overflow-hidden flex items-center justify-center">
+      <div className="h-screen flex items-center justify-center">
         <div
           className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full bg-black"
         >
