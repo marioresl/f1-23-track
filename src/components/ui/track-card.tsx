@@ -8,7 +8,7 @@ interface Props {
 
 export function TrackCard({ track }: Props) {
   return (
-    <div className="w-96 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[500px] min-h-[500px] flex flex-col justify-center items-center">
+    <div className="w-96 bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[500px] min-h-[500px] flex flex-col justify-center items-center">
       {track ? (
         <>
           <img className="rounded-t-lg w-full object-cover" src={track.imageUrl} alt=""/>

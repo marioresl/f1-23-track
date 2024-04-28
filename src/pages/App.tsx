@@ -29,7 +29,7 @@ export function App() {
           </p>
           <TrackCard track={track}/>
           <button className="p-[3px] relative mt-10" onClick={handleClick}>
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-200 to-purple-500 rounded-lg"/>
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-purple-500 rounded-lg"/>
             <div
               className="px-8 py-2  bg-gray-100 rounded-[6px]  relative group transition duration-200 text-dark hover:bg-transparent">
               <img src={car} alt="Car" className="w-12 h-auto inline-block"/> Abfahrt...
