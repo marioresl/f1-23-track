@@ -1,7 +1,6 @@
 import {useState} from "react";
 import { ITrack, getRandomTrack} from "../tracks.ts";
 import {TrackCard} from "../components/ui/track-card.tsx";
-import {Vortex} from "../components/ui/vortex.tsx";
 import car from "../assets/formula.png";
 
 export function App() {
@@ -12,12 +11,8 @@ export function App() {
 
   return (<>
       <div className="h-screen overflow-hidden flex items-center justify-center">
-        <Vortex
-          backgroundColor="black"
-          rangeY={800}
-          particleCount={300}
-          baseHue={550}
-          className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
+        <div
+          className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full bg-black"
         >
           <h1 className="text-6xl font-bold text-center text-white mb-5">Formula 1 2023 - RandInt</h1>
           <p className="text-gray-300 font-thin text-xl">
@@ -35,7 +30,7 @@ export function App() {
               <img src={car} alt="Car" className="w-12 h-auto inline-block"/> Abfahrt...
             </div>
           </button>
-        </Vortex>
+        </div>
       </div>
     </>
   );
